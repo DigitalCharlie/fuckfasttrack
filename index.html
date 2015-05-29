@@ -9,7 +9,7 @@
     <meta name="author" content="Digital Charlie">
     <meta property="og:title" content="There are a lot of reasons to say fuck Fast Track."/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://www.battleforthenet.com/internethealthtest/"/>
+    <meta property="og:url" content="https://www.fuckfasttrack.com"/>
     <meta property="og:image" content="https://www.battleforthenet.com/images/share_images/InternetVoteShare3.png"/>
     <meta property="og:site_name" content="Fuck Fast Track"/>
     <meta property="fb:admins" content="612663871"/>
@@ -21,10 +21,34 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
+
     <div class="statement" id="fact"></div>
     <div class="statement" id="rejection"></div>
 
-    <a class="reload" href="javascript:window.location.reload();">Not enough of a reason to say fuck Fast Track? Learn about more fuckery.</a>
+    <div class="reference" id="reference">
+        
+    </div>
+    <br>
+
+    <div class="reload">
+        <a href="javascript:window.location.reload();">Need another reason to say fuck Fast Track? Click here.</a>
+    </div>
+
+    <div class="reload">
+        <a href="http://www.stopfasttrack.com/" target="_blank">Ready to call your legislators? Click here.</a>
+    </div>
+    
+    <div class="reload">
+        <a href="mailto:ihatefasttrack@gmail.com?subject=Fuck%20Fast%20Track%20Submission&body=Here%20is%20my%20submission%3A" taret="_blank">Have another reason you hate Fast Track? Submit it here.</a>
+    </div>
+
+    <div class="sharefooter">
+        <a class="button facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.fuckfasttrack.com/" target="_blank">Share on Facebook</a> 
+        <a class="button twitter" href="#" taret="_blank">Share on Twitter</a>
+        <a class="button facebook" style="background-color: #2dbc8f;" href="http://www.stopfasttrack.com" target="_blank">Take Action</a>
+    </div>
+
+    </div>
 
     <script>
         var facts=new Array();
@@ -58,6 +82,22 @@
         }
 
         showrejection();
+    </script>
+
+    <script>
+        var references=new Array();
+            references[0] = 'Source: <a href="http:%2F%2Fwww.google.com" target="_blank">Article name 1</a>, Source.';
+            references[1] = 'Source: <a href="http:%2F%2Fwww.google.com" target="_blank">Article name 2</a>, Source.';
+            references[2] = 'Source: <a href="http:%2F%2Fwww.google.com" target="_blank">Article name 3</a>, Source.';
+            references[3] = 'Source: <a href="http:%2F%2Fwww.google.com" target="_blank">Article name 4</a>, Source.';
+
+        var whichreference=whichfact;
+
+        function showreference(){
+        document.getElementById('reference').innerHTML = references[whichreference];
+        }
+
+        showreference();
     </script>
 
 </body>
