@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=yes">
     <meta name="description" content="">
     <meta name="author" content="Digital Charlie">
-    <meta property="og:title" content="There are a lot of reasons to say fuck Fast Track."/>
+    <meta property="og:title" content="There are a lot of reasons to say fuck the TPP."/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://www.fuckfasttrack.com"/>
     <meta property="og:image" content="https://www.battleforthenet.com/images/share_images/InternetVoteShare3.png"/>
@@ -21,32 +21,55 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 </head>
 <body>
+    <div class="top">
+        <div class="statement" id="fact">
+        </div>
 
-    <div class="statement" id="fact"></div>
-    <div class="statement" id="rejection"></div>
-
-    <div class="reference" id="reference">
-        
+        <div class="rejection" id="rejection">
+        </div>
     </div>
+
     <br>
 
-    <div class="reload">
-        <a href="javascript:window.location.reload();">Need another reason to say fuck Fast Track? Click here.</a>
-    </div>
+    <div class="bottom">
 
-    <div class="reload">
-        <a href="http://www.stopfasttrack.com/" target="_blank">Ready to call your legislators? Click here.</a>
-    </div>
-    
-    <div class="reload">
-        <a href="mailto:ihatefasttrack@gmail.com?subject=Fuck%20Fast%20Track%20Submission&body=Here%20is%20my%20submission%3A" taret="_blank">Have another reason you hate Fast Track? Submit it here.</a>
-    </div>
+        <div class="left">
+            <div class="question">
+                    Ready to take action to stop the TPP?
+            </div>
+            <div class="clickherediv">
+                <a class="clickhere" href="http://www.fightthetpp.org/" target="_blank">CLICK HERE</a>
+            </div>
 
-    <div class="sharefooter">
-        <a class="button facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.fuckfasttrack.com/" target="_blank">Share on Facebook</a> 
-        <a class="button twitter" href="#" taret="_blank">Share on Twitter</a>
-        <a class="button facebook" style="background-color: #2dbc8f;" href="http://www.stopfasttrack.com" target="_blank">Take Action</a>
-    </div>
+            <div class="question">
+                    Need another reason to say fuck the TPP? 
+            </div>
+
+            <div class="clickherediv">
+                    <a id="another" class="clickhere">CLICK HERE</a>
+            </div>
+
+            <div class="question">
+                    Want to read more about this specific issue?            
+            </div>
+
+            <div class="clickherediv" id="reference">
+            </div>
+
+            <div class="question">
+                    Have another reason to say Fuck the TPP? 
+            </div>
+
+            <div class="clickherediv">
+                    <a class="clickhere" href="mailto:fuuuuuuckthetpp@gmail.com?subject=Fuck%20the%20TPP%20suggestion" target="_blank">CLICK HERE</a>
+            </div>
+ 
+        </div>
+        <div class="right">
+            <a class="button facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.fuckthetpp.com/" target="_blank">Share on Facebook</a> 
+            <a class="button twitter" href="#" taret="_blank">Share on Twitter</a>
+            <a class="button action" href="http://www.fightthetpp.org" target="_blank">Take Action</a>
+        </div>
 
     </div>
 
@@ -56,9 +79,35 @@
             facts[1] = "fact2";
             facts[2] = "fact3";
             facts[3] = "fact4";
+            facts[4] = "fact5";
+            facts[5] = "fact6";
+            facts[6] = "fact7";
+            facts[7] = "fact8";
+            facts[8] = "fact9";
+            facts[9] = "fact10";
+            facts[10] = "fact11";
+            facts[11] = "fact12";
+            facts[12] = "fact13";
+            facts[13] = "fact14";
+            facts[14] = "fact15";
+            facts[15] = "fact16";
+            facts[16] = "fact17";
+            facts[17] = "fact18";
+            facts[18] = "fact19";
+            facts[19] = "fact20";
+            facts[20] = "fact21";
+            facts[21] = "fact22";
+            facts[22] = "fact23";
+            facts[23] = "fact24";
+            facts[24] = "fact25";
+            facts[25] = "fact26";
+            facts[26] = "fact27";
+            facts[27] = "fact28";
 
         var f = facts.length;
         var whichfact=Math.round(Math.random()*(f-1));
+
+        document.getElementById("another").addEventListener("click", showfact);
 
         function showfact(){
         document.getElementById('fact').innerHTML = facts[whichfact];
@@ -73,9 +122,27 @@
             rejections[1] = "rejection2";
             rejections[2] = "rejection3";
             rejections[3] = "rejection4";
+            rejections[4] = "rejection5";
+            rejections[5] = "rejection6";
+            rejections[6] = "rejection7";
+            rejections[7] = "rejection8";
+            rejections[8] = "rejection9";
+            rejections[9] = "rejection10";
+            rejections[10] = "rejection11";
+            rejections[11] = "rejection12";
+            rejections[12] = "rejection13";
+            rejections[13] = "rejection14";
+            rejections[14] = "rejection15";
+            rejections[15] = "rejection16";
+            rejections[16] = "rejection17";
+            rejections[17] = "rejection18";
+            rejections[18] = "rejection19";
+            rejections[19] = "rejection20";
 
         var r = rejections.length;
         var whichrejection=Math.round(Math.random()*(r-1));
+
+        document.getElementById("another").addEventListener("click", showrejection);
 
         function showrejection(){
         document.getElementById('rejection').innerHTML = rejections[whichrejection];
@@ -86,12 +153,38 @@
 
     <script>
         var references=new Array();
-            references[0] = 'Source: <a href="http:%2F%2Fwww.google.com" target="_blank">Article name 1</a>, Source.';
-            references[1] = 'Source: <a href="http:%2F%2Fwww.google.com" target="_blank">Article name 2</a>, Source.';
-            references[2] = 'Source: <a href="http:%2F%2Fwww.google.com" target="_blank">Article name 3</a>, Source.';
-            references[3] = 'Source: <a href="http:%2F%2Fwww.google.com" target="_blank">Article name 4</a>, Source.';
+            references[0] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[1] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[2] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[3] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[4] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[5] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[6] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[7] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[8] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[9] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[10] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[11] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[12] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[13] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[14] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[15] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[16] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[17] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[18] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[19] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[20] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[21] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[22] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[23] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[24] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[25] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[26] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
+            references[27] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
 
         var whichreference=whichfact;
+
+        document.getElementById("another").addEventListener("click", showreference);
 
         function showreference(){
         document.getElementById('reference').innerHTML = references[whichreference];
