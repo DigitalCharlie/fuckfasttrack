@@ -46,7 +46,7 @@
             </div>
 
             <div class="clickherediv">
-                    <a id="another" class="clickhere">CLICK HERE</a>
+                    <a href="#" id="another" class="clickhere">CLICK HERE</a>
             </div>
 
             <div class="question">
@@ -104,54 +104,6 @@
             facts[26] = "fact27";
             facts[27] = "fact28";
 
-        var f = facts.length;
-        var whichfact=Math.round(Math.random()*(f-1));
-
-        document.getElementById("another").addEventListener("click", showfact);
-
-        function showfact(){
-        document.getElementById('fact').innerHTML = facts[whichfact];
-        }
-
-        showfact();
-    </script>
-
-    <script>
-        var rejections=new Array();
-            rejections[0] = "rejection1";
-            rejections[1] = "rejection2";
-            rejections[2] = "rejection3";
-            rejections[3] = "rejection4";
-            rejections[4] = "rejection5";
-            rejections[5] = "rejection6";
-            rejections[6] = "rejection7";
-            rejections[7] = "rejection8";
-            rejections[8] = "rejection9";
-            rejections[9] = "rejection10";
-            rejections[10] = "rejection11";
-            rejections[11] = "rejection12";
-            rejections[12] = "rejection13";
-            rejections[13] = "rejection14";
-            rejections[14] = "rejection15";
-            rejections[15] = "rejection16";
-            rejections[16] = "rejection17";
-            rejections[17] = "rejection18";
-            rejections[18] = "rejection19";
-            rejections[19] = "rejection20";
-
-        var r = rejections.length;
-        var whichrejection=Math.round(Math.random()*(r-1));
-
-        document.getElementById("another").addEventListener("click", showrejection);
-
-        function showrejection(){
-        document.getElementById('rejection').innerHTML = rejections[whichrejection];
-        }
-
-        showrejection();
-    </script>
-
-    <script>
         var references=new Array();
             references[0] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
             references[1] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
@@ -182,15 +134,52 @@
             references[26] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
             references[27] = '<a class="clickhere" href="http://www.google.com" target="_blank">CLICK HERE</a>';
 
-        var whichreference=whichfact;
+        document.getElementById("another").addEventListener("click", showfact);
 
-        document.getElementById("another").addEventListener("click", showreference);
+        function showfact(){
+            var f = facts.length;
+            var whichfact=Math.round(Math.random()*(f-1));
+            var whichreference=whichfact;
+            document.getElementById('fact').innerHTML = facts[whichfact];
+            document.getElementById('reference').innerHTML = references[whichreference];
 
-        function showreference(){
-        document.getElementById('reference').innerHTML = references[whichreference];
         }
 
-        showreference();
+        showfact();
+    </script>
+
+    <script>
+        var rejections=new Array();
+            rejections[0] = "rejection1";
+            rejections[1] = "rejection2";
+            rejections[2] = "rejection3";
+            rejections[3] = "rejection4";
+            rejections[4] = "rejection5";
+            rejections[5] = "rejection6";
+            rejections[6] = "rejection7";
+            rejections[7] = "rejection8";
+            rejections[8] = "rejection9";
+            rejections[9] = "rejection10";
+            rejections[10] = "rejection11";
+            rejections[11] = "rejection12";
+            rejections[12] = "rejection13";
+            rejections[13] = "rejection14";
+            rejections[14] = "rejection15";
+            rejections[15] = "rejection16";
+            rejections[16] = "rejection17";
+            rejections[17] = "rejection18";
+            rejections[18] = "rejection19";
+            rejections[19] = "rejection20";
+
+        document.getElementById("another").addEventListener("click", showrejection);
+
+        function showrejection(){
+            var r = rejections.length;
+            var whichrejection=Math.round(Math.random()*(r-1));
+            document.getElementById('rejection').innerHTML = rejections[whichrejection];
+        }
+
+        showrejection();
     </script>
 
 </body>
