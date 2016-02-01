@@ -1,11 +1,11 @@
 body {
     margin: 0px;
     padding: 0px 0px 0px 0px;
-    background: #ffffff;
-    font-family: helvetica;
+	background:#282222;
+    font-family: futura;
     color: #000000f;
+    font-size:13px;
     text-align:center;
-    margin-top:20px;
 }
 a {
 
@@ -19,13 +19,16 @@ a.button {
     background: #9085a1;
     text-align: center;
     width: 100%;
-    height: 40px;
-    line-height: 40px;
+    height: 47px;
+    line-height: 50px;
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
     color:#ffffff;
+    border-radius: 25px;
+    margin-bottom:10px;
+	max-width: 300px;
 }
 
 a.button.facebook {
@@ -36,8 +39,8 @@ a.button.twitter {
     background: #37c5d6;
 }
 
-a.button.submit {
-	background: #2E0854;
+a.button.action {
+	background: #e23c2b;
 }
 
 a.button:hover {
@@ -61,8 +64,28 @@ a.button:hover {
 
 }
 
-.reload {
+.clickhere {
+	background:#554a4a;
+	border-radius:20px;
+	text-decoration:none;
+	color:#ffffff;
+	font-size:10px;
+	padding:8px 15px 6px 15px;
+	margin-left:15px;
+}
+
+.clickherediv {
 	margin-bottom:20px;
+	display:inline-block;
+}
+
+a.clickhere:hover {
+	opacity: .8;
+}
+
+.question {
+	margin-bottom:10px;
+	display:inline-block;
 }
 
 .sharefooter {
@@ -76,45 +99,181 @@ a.button:hover {
 	font-weight:bold;
 	font-size:40px;
 	margin-bottom:20px;
+	color:#ffffff;
+	font-family:impact;	
+	text-transform: uppercase;
 }
 
+.rejection {
+	font-weight:bold;
+	font-size:40px;
+	margin-bottom:20px;
+	font-family:impact;	
+	text-transform: uppercase;
+}
 
+.top {
+	background-color:#e23c2b;
+	padding-top:20px;
+	padding-left:5%;
+	padding-right:5%;
+	padding-bottom:20px;
+}
 
+.bottom {
+	background-color:#282222;
+	color:#ffffff;
+	padding-left:5%;
+	padding-right:5%;
+}
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width:395px) {
+
+.clickherediv {
+	margin-bottom:25px;
+	display:block;
+}
+
+}
+
+@media screen and (min-width: 605px) and (max-width:845px) {
 
 	body {
-		margin-top:50px;
+		font-size:13px;
+		text-align:left;
+	}
+
+	.top {
+		padding-top:35px;
+		padding-left:5%;
+		padding-right:5%;
+		padding-bottom:35px;
+		background-image: url("images/redglobebackground.png");
+	}
+
+	.bottom {
+		padding-top:15px;
+		padding-left:5%;
+		padding-bottom:15px;		
+	}
+
+	
+	.left {
+		border-right: 1px solid #ffffff;
+		width:65%;
+		float:left;
+		min-height:140px;
+		padding-top:15px;
+
+	}
+
+	.right {
+		width:34%;
+		display:inline-block;
+		padding-top:5px;
+
+
 	}
 
 	.reference {
 
 	}
 
-	.reload {
-
+	.rejection {
+		font-size:60px;
+		line-height:65px;
 	}
 
 	.statement {
-		font-size:80px;
-		margin-bottom:40px;
-
-	}
-
-	.sharefooter {
-		position:fixed;
-		bottom:0;
-		width:100%;
-		background-color:rgb(227, 229, 230);
-		padding:15px;
+		font-size:60px;
+		line-height:65px;
+		margin-bottom:25px;
 	}
 
 	a.button {
 		width: 190px;
-		margin: 0px 5px;
-		border-radius: 5px;
+		margin: 0px 25px 15px 25px;
+		height:35px;
+		line-height:38px;
+	}
+
+}
+
+
+
+@media screen and (min-width: 845px) {
+
+	body {
+		text-align:left;
+		font-size:17px;
+	}
+
+	.top {
+		padding-top:35px;
+		padding-left:7%;
+		padding-right:7%;
+		padding-bottom:35px;
+		background-image: url("images/redglobebackground.png");
+	}
+
+	.bottom {
+		padding-top:15px;
+		padding-left:7%;
+		padding-right:7%;
+		padding-bottom:15px;		
+	}
+
+	
+	.left {
+		border-right: 1px solid #ffffff;
+		width:65%;
+		float:left;
+		min-height:140px;
+		padding-top:15px;
 
 	}
 
+	.right {
+		width:34%;
+		display:inline-block;
+		padding-top:5px;
+
+
+	}
+
+	.reference {
+
+	}
+
+	.rejection {
+		font-size:70px;
+		line-height:75px;
+	}
+
+	.statement {
+		font-size:70px;
+		line-height:75px;
+		margin-bottom:25px;
+	}
+
+	a.button {
+		width: 190px;
+		margin: 0px 25px 10px 25px;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+	.top {
+		padding-left:10%;
+		padding-right:10%;
+		background-image: url("images/redglobebackground.png");
+	}
+
+	.bottom {
+		padding-left:10%;
+		padding-right:10%;
+	}
 
 }
