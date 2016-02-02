@@ -278,3 +278,77 @@ a.clickhere:hover {
 	}
 
 }
+
+div.petition {
+	border-top: 8px solid #4bb0a5;
+	background: #3b958b;
+	padding: 1rem 0 3rem 0;
+	text-align: center;
+	box-shadow: 0 5px 40px rgba(0, 0, 0, .3);
+	z-index: 2;
+}
+
+div.petition h2 {
+	width: 100%;
+	max-width: 900px;
+	font-weight: 400;
+	color: white;
+	padding: .5rem 15px;
+	text-align: center;
+	margin: 0 auto 1rem auto;
+}
+
+div.petition textarea {
+	display: none;
+}
+
+div.petition input {
+	border: 0 none transparent;
+	border-radius: 5px;
+	background: white;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.8rem;
+	width: 150px;
+	margin: 4px 4px;
+	padding: 0 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.petition button {
+	display: inline-block;
+	border: 0 none transparent;
+	background: #ff4318;
+	color: white;
+	font-size: 2rem;
+	height: 50px;
+	line-height: 48px;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	font-weight: 600;
+	margin: 5px 4px 4px 4px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+div.petition button:hover {
+	background: #dd3207;
+}
+
+div.petition .thanks {
+	display: none;
+	font-size: 2rem;
+	padding: 2rem 15px 1rem 15px;
+	color: white;
+}
+
+.disclosure {
+	text-align: center;
+	padding: 1.5rem 15px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: #1f534d;
+}
