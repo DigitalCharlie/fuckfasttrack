@@ -110,6 +110,12 @@ a.clickhere:hover {
 	margin-bottom:20px;
 	font-family:impact;	
 	text-transform: uppercase;
+	cursor:pointer;
+	text-decoration: none;
+	color:#000000;
+}
+.rejection:hover {
+	text-decoration:underline;
 }
 
 .top {

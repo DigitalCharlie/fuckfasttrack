@@ -42,9 +42,24 @@
 
   });
 
-  doc.querySelector('.button.action').addEventListener('click', function (e) {
+  function firePetitionModal(e) {
     e.preventDefault();
     new PetitionModalController({page_id: 'fuck-the-tpp', petition_content: 'The tpp is bullshit.'});
-  });
+  }
+
+  doc.querySelectorAll('[href="http://www.fightthetpp.org/"]')[0].addEventListener('click', firePetitionModal);
+  doc.querySelectorAll('[href="http://www.fightthetpp.org/"]')[1].addEventListener('click', firePetitionModal);
+  doc.getElementById('rejection').addEventListener('click', firePetitionModal);
+
+
+  var counter = 0;
+  function clickedAnotherThreeTimes (e) {
+    counter++;
+    if (counter === 3 || counter === 8) {
+      new PetitionModalController({page_id: 'fuck-the-tpp', petition_content: 'The tpp is bullshit.'});
+    }
+  }
+  doc.getElementById('another').addEventListener('click', clickedAnotherThreeTimes);
+
 
 }(document));
