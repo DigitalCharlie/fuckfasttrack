@@ -4,6 +4,8 @@
   var PetitionModalController = BaseShareModalController.extend({
     page_id: 'fuck-the-tpp',
     petition_content: 'The TPP is bullshit and you have GOT to do something about it.',
+    share_headline: 'awesome.',
+    share_text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)',
     init: function () {
       this.render();
       this.show();
@@ -33,18 +35,25 @@
         page_id: this.page_id,
         onSend: function () {
           new ShareModalController({
-            headline: 'awesome.',
-            text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)'
+            headline: this.share_headline,
+            text: this.share_text
           });
         }
       });
     }
-
   });
+
+  var
+    petitionModalContent = {
+      page_id: 'fuck-the-tpp',
+      petition_content: 'The tpp is bullshit.',
+      share_headline: 'awesome.',
+      share_text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)',
+    };
 
   function firePetitionModal(e) {
     e.preventDefault();
-    new PetitionModalController({page_id: 'fuck-the-tpp', petition_content: 'The tpp is bullshit.'});
+    new PetitionModalController(petitionModalContent);
   }
 
   doc.querySelectorAll('[href="http://www.fightthetpp.org/"]')[0].addEventListener('click', firePetitionModal);
