@@ -359,19 +359,19 @@ div.petition .thanks {
 }
 
 [name="first_name"] {
-  width:33%;
+  width:33% !important;
 }
 
 [name="email"] {
-  width:33%;
+  width:33% !important;
 }
 
 [name="address1"] {
-  width:45%;
+  width:45% !important;
 }
 
 [name="zip"] {
-  width:21%;
+  width:21% !important;
 }
 
 .overlay .gutter .modal._call_modal{
