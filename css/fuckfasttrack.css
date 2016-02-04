@@ -289,9 +289,7 @@ div.petition {
 	background: #d6d6d6;
 	padding: 1rem 0 3rem 0;
 	text-align: center;
-	box-shadow: 0 5px 40px rgba(0, 0, 0, .3);
 	z-index: 2;
-	border-radius:15px;
 }
 
 div.petition h2 {
@@ -374,8 +372,7 @@ div.petition .thanks {
   width:21% !important;
 }
 
-.overlay .gutter .modal._call_modal{
-	background:#d6d6d6;
-	margin-top:10%;
-	border-radius:15px;
+.modal._petition_modal {
+	background:#d6d6d6 !important;
+	border-radius:20px !important;
 }
