@@ -287,7 +287,6 @@ a.clickhere:hover {
 
 div.petition {
 	background: #d6d6d6;
-	padding: 1rem 0 3rem 0;
 	text-align: center;
 	z-index: 2;
 }
@@ -336,10 +335,11 @@ div.petition button {
 	text-transform: uppercase;
 	vertical-align: top;
 	cursor: pointer;
+	width:74%;
 }
 
 div.petition button:hover {
-	background: #dd3207;
+	background: #c13021;
 }
 
 div.petition .thanks {
@@ -351,8 +351,8 @@ div.petition .thanks {
 
 .disclosure {
 	text-align: center;
-	padding: 1.5rem 15px;
-	font-size: 10px;
+	font-size: 10px !important;
+	font-weight:normal !important;
 	color: #000000;
 }
 
@@ -375,4 +375,14 @@ div.petition .thanks {
 .modal._petition_modal {
 	background:#d6d6d6 !important;
 	border-radius:20px !important;
+}
+
+.overlay .gutter .modal h2 {
+	display:none;
+}
+
+.overlay .gutter .modal p {
+	font-size:40px;
+	line-height: 52px !important;
+	font-weight:bold;
 }

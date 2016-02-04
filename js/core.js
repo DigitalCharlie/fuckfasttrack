@@ -60,16 +60,11 @@
     petitionModalContent = {
       page_id: 'fuck-the-tpp',
       petition_headline: 'The TPP is bullshit and you have GOT to do something about it.',
-<<<<<<< Updated upstream
-      petition_content: 'Vote NO on the TPP',
-      share_headline: 'awesome.',
-      share_text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)',
-      petitionSubmitText: 'take fucking action'
-=======
-      petition_content: 'Vote HELL FUCKING NO on the TPP',
+      petition_content: 'Tell Congress: Vote HELL FUCKING NO on the TPP',
       share_headline: 'Well that was fucking awesome. Now spread the goddamn word.',
-      share_text: 'Share this so more people see how fucking shitty the TPP is. Or, chip in $5 to help us spread the word, probably with ads.'
->>>>>>> Stashed changes
+      share_text: 'Share this so more people see how fucking shitty the TPP is. Or, chip in $5 to help us spread the word, probably with ads.',
+      petitionSubmitText: 'take fucking action'
+
     };
 
   function firePetitionModal(e) {
