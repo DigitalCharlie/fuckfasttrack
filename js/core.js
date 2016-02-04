@@ -83,7 +83,7 @@
   function clickedAnotherThreeTimes (e) {
     counter++;
     if (counter === 3 || counter === 8) {
-      new PetitionModalController({page_id: 'fuck-the-tpp', petition_content: 'The tpp is bullshit.'});
+      new PetitionModalController({page_id: 'fuck-the-tpp', petition_content: 'Tell Congress: Vote HELL FUCKING NO on the TPP'});
     }
   }
   doc.getElementById('another').addEventListener('click', clickedAnotherThreeTimes);
