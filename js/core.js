@@ -1,9 +1,12 @@
 (function (doc) {
   "use strict";
 
-  var PetitionModalController = BaseShareModalController.extend({
+  var PetitionModalController = BaseModalController.extend({
     page_id: 'fuck-the-tpp',
-    petition_content: 'The TPP is bullshit and you have GOT to do something about it.',
+    petition_headline: 'The TPP is bullshit and you have GOT to do something about it.',
+    petition_content: 'Vote NO on the TPP',
+    share_headline: 'awesome.',
+    share_text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)',
     init: function () {
       this.render();
       this.show();
@@ -13,18 +16,28 @@
         overlay = this.base_render(),
         modal = $c('div'),
         close = $c('button'),
-        petition = $c('div');
+        petition = $c('div'),
+        copy = $c('section'),
+        petitionHeadline = $c('h2'),
+        petitionContent = $c('p');
 
-      modal.classList.add('modal', '_call_modal');
+      modal.classList.add('modal', '_petition_modal');
       close.classList.add('close');
+
+      petitionHeadline.textContent = this.petition_headline;
+      petitionContent.textContent = this.petition_content;
+
       petition.id = 'petition';
       petition.innerHTML = this.petition_content;
 
-      close.textContent = '⨉';
+      close.innerHTML = '&times;';
+
+      copy.appendChild(petitionHeadline);
+      copy.appendChild(petitionContent);
 
       modal.appendChild(close);
+      modal.appendChild(copy);
       modal.appendChild(petition);
-
 
       overlay.firstChild.appendChild(modal);
       this.html(overlay);
@@ -33,18 +46,26 @@
         page_id: this.page_id,
         onSend: function () {
           new ShareModalController({
-            headline: 'awesome.',
-            text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)'
+            headline: this.share_headline,
+            text: this.share_text
           });
         }
       });
     }
-
   });
+
+  var
+    petitionModalContent = {
+      page_id: 'fuck-the-tpp',
+      petition_headline: 'The TPP is bullshit and you have GOT to do something about it.',
+      petition_content: 'Vote NO on the TPP',
+      share_headline: 'awesome.',
+      share_text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)'
+    };
 
   function firePetitionModal(e) {
     e.preventDefault();
-    new PetitionModalController({page_id: 'fuck-the-tpp', petition_content: 'The tpp is bullshit.'});
+    new PetitionModalController(petitionModalContent);
   }
 
   doc.querySelectorAll('[href="http://www.fightthetpp.org/"]')[0].addEventListener('click', firePetitionModal);
