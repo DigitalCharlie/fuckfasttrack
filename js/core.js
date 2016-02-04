@@ -7,6 +7,7 @@
     petition_content: 'Vote NO on the TPP',
     share_headline: 'awesome.',
     share_text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)',
+    petitionSubmitText: 'Submit',
     init: function () {
       this.render();
       this.show();
@@ -43,6 +44,7 @@
       this.html(overlay);
       new EmailPetitionController({
         el: '#petition',
+        buttonText: this.petitionSubmitText,
         page_id: this.page_id,
         onSend: function () {
           new ShareModalController({
@@ -60,7 +62,8 @@
       petition_headline: 'The TPP is bullshit and you have GOT to do something about it.',
       petition_content: 'Vote NO on the TPP',
       share_headline: 'awesome.',
-      share_text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)'
+      share_text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)',
+      petitionSubmitText: 'take fucking action'
     };
 
   function firePetitionModal(e) {
