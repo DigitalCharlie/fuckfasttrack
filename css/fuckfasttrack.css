@@ -286,12 +286,12 @@ a.clickhere:hover {
 }
 
 div.petition {
-	border-top: 8px solid #4bb0a5;
-	background: #3b958b;
+	background: #d6d6d6;
 	padding: 1rem 0 3rem 0;
 	text-align: center;
 	box-shadow: 0 5px 40px rgba(0, 0, 0, .3);
 	z-index: 2;
+	border-radius:15px;
 }
 
 div.petition h2 {
@@ -312,9 +312,9 @@ div.petition input {
 	border: 0 none transparent;
 	border-radius: 5px;
 	background: white;
-	height: 50px;
-	line-height: 50px;
-	font-size: 1.8rem;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.2rem;
 	width: 150px;
 	margin: 4px 4px;
 	padding: 0 10px;
@@ -325,7 +325,7 @@ div.petition input {
 div.petition button {
 	display: inline-block;
 	border: 0 none transparent;
-	background: #ff4318;
+	background: #e23c2b;
 	color: white;
 	font-size: 2rem;
 	height: 50px;
@@ -354,7 +354,28 @@ div.petition .thanks {
 .disclosure {
 	text-align: center;
 	padding: 1.5rem 15px;
-	font-size: 1.4rem;
-	font-weight: 600;
-	color: #1f534d;
+	font-size: 10px;
+	color: #000000;
+}
+
+[name="first_name"] {
+  width:33%;
+}
+
+[name="email"] {
+  width:33%;
+}
+
+[name="address1"] {
+  width:45%;
+}
+
+[name="zip"] {
+  width:21%;
+}
+
+.overlay .gutter .modal._call_modal{
+	background:#d6d6d6;
+	margin-top:10%;
+	border-radius:15px;
 }
