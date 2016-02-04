@@ -377,10 +377,6 @@ div.petition .thanks {
 	border-radius:20px !important;
 }
 
-.overlay .gutter .modal h2 {
-	display:none;
-}
-
 .overlay .gutter .modal p {
 	font-size:40px;
 	line-height: 52px !important;
