@@ -3,7 +3,6 @@
 
   var PetitionModalController = BaseModalController.extend({
     page_id: 'fuck-the-tpp',
-    petition_headline: 'The TPP is bullshit and you have GOT to do something about it.',
     petition_content: 'Vote NO on the TPP',
     share_headline: 'awesome.',
     share_text: 'now, share this so more people see how fucking shitty the TPP is. (or, chip in $5 to help us spread the word)',
@@ -25,7 +24,6 @@
       modal.classList.add('modal', '_petition_modal');
       close.classList.add('close');
 
-      petitionHeadline.textContent = this.petition_headline;
       petitionContent.textContent = this.petition_content;
 
       petition.id = 'petition';
@@ -33,7 +31,11 @@
 
       close.innerHTML = '&times;';
 
-      copy.appendChild(petitionHeadline);
+      if (this.petitionHeadline) {
+        petitionHeadline.textContent = this.petition_headline;
+        copy.appendChild(petitionHeadline);
+      }
+
       copy.appendChild(petitionContent);
 
       modal.appendChild(close);
@@ -59,7 +61,7 @@
   var
     petitionModalContent = {
       page_id: 'fuck-the-tpp',
-      petition_headline: 'The TPP is bullshit and you have GOT to do something about it.',
+//      petition_headline: 'The TPP is bullshit and you have GOT to do something about it.',
       petition_content: 'Tell Congress: Vote HELL FUCKING NO on the TPP',
       share_headline: 'Well that was fucking awesome. Now spread the goddamn word.',
       share_text: 'Share this so more people see how fucking shitty the TPP is. Or, chip in $5 to help us spread the word, probably with ads.',
