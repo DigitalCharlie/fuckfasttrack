@@ -312,9 +312,9 @@ div.petition input {
 	border: 0 none transparent;
 	border-radius: 5px;
 	background: white;
-	height: 50px;
-	line-height: 50px;
-	font-size: 1.8rem;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.2rem;
 	width: 150px;
 	margin: 4px 4px;
 	padding: 0 10px;
@@ -356,6 +356,22 @@ div.petition .thanks {
 	padding: 1.5rem 15px;
 	font-size: 10px;
 	color: #000000;
+}
+
+[name="first_name"] {
+  width:33%;
+}
+
+[name="email"] {
+  width:33%;
+}
+
+[name="address1"] {
+  width:45%;
+}
+
+[name="zip"] {
+  width:21%;
 }
 
 .overlay .gutter .modal._call_modal{
