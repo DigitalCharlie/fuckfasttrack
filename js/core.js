@@ -64,7 +64,7 @@
     petitionModalContent = {
       page_id: 'fuck-the-tpp',
 //      petition_headline: 'The TPP is bullshit and you have GOT to do something about it.',
-      petition_content: 'Tell Congress: Vote HELL FUCKING NO on the TPP',
+      petition_content: 'Tell Congress: Vote FUCK NO on the TPP',
       share_headline: 'Well that was fucking awesome.',
       share_text: 'Now share this and spread the goddamn word. Or chip in $5 to help us spread the word (probably with some fucking ads).',
       petitionSubmitText: 'take fucking action'
