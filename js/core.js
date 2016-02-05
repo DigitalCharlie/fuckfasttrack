@@ -44,11 +44,13 @@
 
       overlay.firstChild.appendChild(modal);
       this.html(overlay);
+      var that = this;
       new EmailPetitionController({
         el: '#petition',
         buttonText: this.petitionSubmitText,
         page_id: this.page_id,
         onSend: function () {
+          that.hide();
           new ShareModalController({
             headline: this.share_headline,
             text: this.share_text
