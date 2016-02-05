@@ -136,6 +136,51 @@ a.clickhere:hover {
 	padding-right:5%;
 }
 
+._call_shares button {
+	border: none;
+	color: white;
+	display: block;
+	font-size: 23px;
+	font-variant: small-caps;
+	opacity: 0.9;
+	padding: 6px 0 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	transition: opacity 150ms;
+	width: 97%;
+	border-radius:10px;
+	margin: 0 5px;
+	margin-bottom:5px;
+	cursor:pointer;
+	font-family:futura !important;
+	height:40px;
+}
+
+._call_shares button:hover {
+	opacity: 1;
+}
+
+._call_shares button::before {
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: inline-block;
+	height: 21px;
+	position: relative;
+	width: 21px;
+	margin-right:4px;
+}
+
+._call_shares {
+	padding-bottom:20px !important;
+	max-width:500px;
+	width:93%;
+	margin:0 auto;
+}
+
 ._call_shares .facebook {
 	background-color: #3b5998;
 }
@@ -143,7 +188,6 @@ a.clickhere:hover {
 ._call_shares .facebook::before {
 	background-image: url('../images/fb-57.png');
 	top: 1px;
-
 }
 
 ._call_shares .twitter {
@@ -161,7 +205,7 @@ a.clickhere:hover {
 
 ._call_shares .donate::before {
 	background-image: url('../images/heart-57.png');
-	top: 7px;
+	top: 4px;
 }
 
 
@@ -288,26 +332,6 @@ div.petition .thanks {
 	font-weight: 500;
 	max-width:94%;
 	margin: 15px auto;
-}
-
-._call_shares button {
-	border: none;
-	color: white;
-	display: block;
-	font-size: 23px;
-	font-variant: small-caps;
-	font-weight:bold;
-	opacity: 0.9;
-	padding: 6px 0 15px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: lowercase;
-	transition: opacity 150ms;
-	width: 97%;
-	border-radius:10px;
-	margin: 0 5px;
-	margin-bottom:5px;
-	cursor:pointer;
 }
 
 @media screen and (max-width:395px) {
@@ -491,23 +515,6 @@ div.petition .thanks {
 		padding-right:10%;
 	}
 
-}
-
-
-._call_shares button:hover {
-	opacity: 1;
-}
-
-._call_shares button::before {
-	background-color: transparent;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: contain;
-	content: '';
-	display: inline-block;
-	height: 29px;
-	position: relative;
-	width: 29px;
 }
 
 @media screen and (min-width: 800px) {
