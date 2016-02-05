@@ -377,11 +377,25 @@ div.petition .thanks {
 	border-radius:20px !important;
 }
 
-.overlay .gutter .modal p {
+.overlay .gutter .modal._call_modal h2 {
+	font-size:40px !important;
+	line-height:45px !important;
+	color:#000000 !important;
+	margin-bottom:0px;
+}
+
+.modal._call_modal p {
+	font-size:25px !important;
+	line-height:30px !important;
+	color:#000000 !important;
+}
+
+.overlay .gutter .modal._petition_modal p {
 	font-size:40px;
 	line-height: 52px !important;
 	font-weight:bold;
 }
+
 
 @media screen and (min-width: 480px) {
 	._call_shares {
@@ -396,18 +410,23 @@ div.petition .thanks {
 	display: block;
 	font-size: 23px;
 	font-variant: small-caps;
+	font-weight:bold;
 	opacity: 0.9;
-	padding: 6px 0 12px;
+	padding: 6px 0 15px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: lowercase;
 	transition: opacity 150ms;
-	width: 100%;
+	width: 97%;
+	border-radius:40px;
+	margin: 0 5px;
+	margin-bottom:5px;
+	cursor:pointer;
 }
 
 @media screen and (min-width: 800px) {
 	._call_shares button {
-		max-width: 350px;
+		max-width: 300px;
 	}
 }
 
@@ -428,29 +447,29 @@ div.petition .thanks {
 }
 
 ._call_shares .facebook {
-	background-color: #3b5999;
+	background-color: #3b5998;
 }
 
 ._call_shares .facebook::before {
-	background-image: url('/images/fb-57.png');
-	top: 3px;
+	background-image: url('../images/fb-57.png');
+	top: 1px;
 
 }
 
 ._call_shares .twitter {
-	background-color: #55acee;
+	background-color: #37c5d6;
 }
 
 ._call_shares .twitter::before {
-	background-image: url('/images/tw-57.png');
-	top: 8px;
+	background-image: url('../images/tw-57.png');
+	top: 5px;
 }
 
 ._call_shares .donate {
-	background-color: #3b69ed;
+	background-color: #e23c2b;
 }
 
 ._call_shares .donate::before {
-	content: '\2665';
-	top: 1px;
+	background-image: url('../images/heart-57.png');
+	top: 7px;
 }
