@@ -85,7 +85,7 @@
   function clickedAnotherThreeTimes (e) {
     counter++;
     if (counter === 3 || counter === 8) {
-      new PetitionModalController({page_id: 'fuck-the-tpp', petition_content: 'Tell Congress: Vote HELL FUCKING NO on the TPP'});
+      new PetitionModalController({page_id: 'fuck-the-tpp', petition_content: 'Tell Congress: Vote HELL FUCKING NO on the TPP', share_headline: 'Well that was fucking awesome.', share_text: 'Now share this and spread the goddamn word. Or chip in $5 to help us spread the word (probably with some fucking ads).', petitionSubmitText: 'take fucking action'});
     }
   }
   doc.getElementById('another').addEventListener('click', clickedAnotherThreeTimes);
