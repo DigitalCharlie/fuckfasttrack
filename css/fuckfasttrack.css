@@ -382,3 +382,75 @@ div.petition .thanks {
 	line-height: 52px !important;
 	font-weight:bold;
 }
+
+@media screen and (min-width: 480px) {
+	._call_shares {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+._call_shares button {
+	border: none;
+	color: white;
+	display: block;
+	font-size: 23px;
+	font-variant: small-caps;
+	opacity: 0.9;
+	padding: 6px 0 12px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	transition: opacity 150ms;
+	width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+	._call_shares button {
+		max-width: 350px;
+	}
+}
+
+._call_shares button:hover {
+	opacity: 1;
+}
+
+._call_shares button::before {
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: inline-block;
+	height: 29px;
+	position: relative;
+	width: 29px;
+}
+
+._call_shares .facebook {
+	background-color: #3b5999;
+}
+
+._call_shares .facebook::before {
+	background-image: url('/images/fb-57.png');
+	top: 3px;
+
+}
+
+._call_shares .twitter {
+	background-color: #55acee;
+}
+
+._call_shares .twitter::before {
+	background-image: url('/images/tw-57.png');
+	top: 8px;
+}
+
+._call_shares .donate {
+	background-color: #3b69ed;
+}
+
+._call_shares .donate::before {
+	content: '\2665';
+	top: 1px;
+}
