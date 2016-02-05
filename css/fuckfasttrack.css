@@ -136,9 +136,178 @@ a.clickhere:hover {
 	padding-right:5%;
 }
 
+._call_shares .facebook {
+	background-color: #3b5998;
+}
+
+._call_shares .facebook::before {
+	background-image: url('../images/fb-57.png');
+	top: 1px;
+
+}
+
+._call_shares .twitter {
+	background-color: #37c5d6;
+}
+
+._call_shares .twitter::before {
+	background-image: url('../images/tw-57.png');
+	top: 5px;
+}
+
+._call_shares .donate {
+	background-color: #e23c2b;
+}
+
+._call_shares .donate::before {
+	background-image: url('../images/heart-57.png');
+	top: 7px;
+}
+
+
+div.petition {
+	text-align: center;
+	z-index: 2;
+}
+
+div.petition h2 {
+	width: 100%;
+	max-width: 900px;
+	font-weight: 400;
+	color: white;
+	padding: .5rem 15px;
+	text-align: center;
+	margin: 0 auto 1rem auto;
+}
+
+div.petition textarea {
+	display: none;
+}
+
+div.petition input {
+	border: 1px solid #d2d2d2;
+	border-radius: 10px;
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.2rem;
+	width: 150px;
+	margin: 1% 1%;
+	padding: 0 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
 div.petition button {
+	display: inline-block;
+	border: 0 none transparent;
+	background: #e23c2b;
+	color: white;
+	height: 50px;
+	line-height: 55px;
+	letter-spacing: 1px;
+	border-radius: 10px;
+	font-weight: 400;
+	margin: 5px 4px 4px 4px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	vertical-align: top;
+	cursor: pointer;
+	font-family:futura;
 	font-size: 16px;
-	width:78%;
+	width:92%;
+}
+
+div.petition button:hover {
+	background: #c13021;
+}
+
+div.petition .thanks {
+	display: none;
+	font-size: 2rem;
+	padding: 2rem 15px 1rem 15px;
+	color: white;
+}
+
+.disclosure {
+	text-align: center;
+	font-size: 10px !important;
+	font-weight:normal !important;
+	color: #000000;
+	margin: -5px 0 -10px 0 !important;
+}
+
+[name="first_name"] {
+  width:39% !important;
+}
+
+[name="email"] {
+  width:39% !important;
+}
+
+[name="address1"] {
+  width:57% !important;
+}
+
+[name="zip"] {
+  width:21% !important;
+}
+
+.modal._petition_modal {
+	background:#ffffff !important;
+	border-radius:20px !important;
+	max-width:500px !important;
+	padding:2% !important;
+}
+
+.modal._call_modal {
+	background:#ffffff !important;
+	border-radius:20px !important;
+	max-width:500px !important;
+	padding:2% !important;
+}
+
+.overlay .gutter .modal._call_modal h2 {
+	font-size:30px !important;
+	font-weight:500 !important;
+	line-height:37px !important;
+	color:#000000 !important;
+	margin-bottom:0px;
+	padding-top:5px !important;
+}
+
+.modal._call_modal p {
+	font-size:24px !important;
+	line-height:28px !important;
+	color:#000000 !important;
+}
+
+.overlay .gutter .modal._petition_modal p {
+	font-size:38px;
+	line-height: 48px !important;
+	font-weight: 500;
+	max-width:94%;
+	margin: 15px auto;
+}
+
+._call_shares button {
+	border: none;
+	color: white;
+	display: block;
+	font-size: 23px;
+	font-variant: small-caps;
+	font-weight:bold;
+	opacity: 0.9;
+	padding: 6px 0 15px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	transition: opacity 150ms;
+	width: 97%;
+	border-radius:10px;
+	margin: 0 5px;
+	margin-bottom:5px;
+	cursor:pointer;
 }
 
 @media screen and (max-width:395px) {
@@ -150,9 +319,24 @@ div.petition button {
 
 	div.petition button {
 		font-size: 13px;
-		width:83%;
+		width:94%;
 	}
 
+	.disclosure {
+		font-size: 8px !important;
+	}
+
+}
+
+@media screen and (min-width: 480px) {
+	._call_shares {
+		display: flex;
+		justify-content: center;
+	}
+
+	div.petition button {
+		font-size: 15px;
+	}
 }
 
 @media screen and (min-width: 605px) and (max-width:845px) {
@@ -216,8 +400,12 @@ div.petition button {
 	}
 
 	div.petition button {
-	font-size: 1.75rem;
-	width:74%;
+		font-size: 1.25rem;
+		width:89%;
+	}
+
+	.modal._petition_modal {
+		margin-top:50px !important;
 	}
 
 }
@@ -284,9 +472,8 @@ div.petition button {
 	}
 
 	div.petition button {
-		font-size: 2rem;
-		width:74%;
-
+		font-size: 1.5rem;
+		width:89%;
 	}
 
 }
@@ -306,148 +493,6 @@ div.petition button {
 
 }
 
-div.petition {
-	background: #d6d6d6;
-	text-align: center;
-	z-index: 2;
-}
-
-div.petition h2 {
-	width: 100%;
-	max-width: 900px;
-	font-weight: 400;
-	color: white;
-	padding: .5rem 15px;
-	text-align: center;
-	margin: 0 auto 1rem auto;
-}
-
-div.petition textarea {
-	display: none;
-}
-
-div.petition input {
-	border: 0 none transparent;
-	border-radius: 5px;
-	background: white;
-	height: 40px;
-	line-height: 40px;
-	font-size: 1.2rem;
-	width: 150px;
-	margin: 4px 4px;
-	padding: 0 10px;
-	display: inline-block;
-	vertical-align: top;
-}
-
-div.petition button {
-	display: inline-block;
-	border: 0 none transparent;
-	background: #e23c2b;
-	color: white;
-	height: 50px;
-	line-height: 48px;
-	letter-spacing: 1px;
-	border-radius: 5px;
-	font-weight: 600;
-	margin: 5px 4px 4px 4px;
-	padding: 0 20px;
-	text-transform: uppercase;
-	vertical-align: top;
-	cursor: pointer;
-}
-
-div.petition button:hover {
-	background: #c13021;
-}
-
-div.petition .thanks {
-	display: none;
-	font-size: 2rem;
-	padding: 2rem 15px 1rem 15px;
-	color: white;
-}
-
-.disclosure {
-	text-align: center;
-	font-size: 10px !important;
-	font-weight:normal !important;
-	color: #000000;
-}
-
-[name="first_name"] {
-  width:33% !important;
-}
-
-[name="email"] {
-  width:33% !important;
-}
-
-[name="address1"] {
-  width:45% !important;
-}
-
-[name="zip"] {
-  width:21% !important;
-}
-
-.modal._petition_modal {
-	background:#d6d6d6 !important;
-	border-radius:20px !important;
-}
-
-.overlay .gutter .modal._call_modal h2 {
-	font-size:40px !important;
-	line-height:45px !important;
-	color:#000000 !important;
-	margin-bottom:0px;
-}
-
-.modal._call_modal p {
-	font-size:25px !important;
-	line-height:30px !important;
-	color:#000000 !important;
-}
-
-.overlay .gutter .modal._petition_modal p {
-	font-size:40px;
-	line-height: 52px !important;
-	font-weight:bold;
-}
-
-
-@media screen and (min-width: 480px) {
-	._call_shares {
-		display: flex;
-		justify-content: center;
-	}
-}
-
-._call_shares button {
-	border: none;
-	color: white;
-	display: block;
-	font-size: 23px;
-	font-variant: small-caps;
-	font-weight:bold;
-	opacity: 0.9;
-	padding: 6px 0 15px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: lowercase;
-	transition: opacity 150ms;
-	width: 97%;
-	border-radius:40px;
-	margin: 0 5px;
-	margin-bottom:5px;
-	cursor:pointer;
-}
-
-@media screen and (min-width: 800px) {
-	._call_shares button {
-		max-width: 300px;
-	}
-}
 
 ._call_shares button:hover {
 	opacity: 1;
@@ -465,30 +510,8 @@ div.petition .thanks {
 	width: 29px;
 }
 
-._call_shares .facebook {
-	background-color: #3b5998;
-}
-
-._call_shares .facebook::before {
-	background-image: url('../images/fb-57.png');
-	top: 1px;
-
-}
-
-._call_shares .twitter {
-	background-color: #37c5d6;
-}
-
-._call_shares .twitter::before {
-	background-image: url('../images/tw-57.png');
-	top: 5px;
-}
-
-._call_shares .donate {
-	background-color: #e23c2b;
-}
-
-._call_shares .donate::before {
-	background-image: url('../images/heart-57.png');
-	top: 7px;
+@media screen and (min-width: 800px) {
+	._call_shares button {
+		max-width: 300px;
+	}
 }
