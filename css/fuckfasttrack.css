@@ -287,11 +287,8 @@ a.clickhere:hover {
 
 div.petition {
 	background: #d6d6d6;
-	padding: 1rem 0 3rem 0;
 	text-align: center;
-	box-shadow: 0 5px 40px rgba(0, 0, 0, .3);
 	z-index: 2;
-	border-radius:15px;
 }
 
 div.petition h2 {
@@ -338,10 +335,11 @@ div.petition button {
 	text-transform: uppercase;
 	vertical-align: top;
 	cursor: pointer;
+	width:74%;
 }
 
 div.petition button:hover {
-	background: #dd3207;
+	background: #c13021;
 }
 
 div.petition .thanks {
@@ -353,29 +351,34 @@ div.petition .thanks {
 
 .disclosure {
 	text-align: center;
-	padding: 1.5rem 15px;
-	font-size: 10px;
+	font-size: 10px !important;
+	font-weight:normal !important;
 	color: #000000;
 }
 
 [name="first_name"] {
-  width:33%;
+  width:33% !important;
 }
 
 [name="email"] {
-  width:33%;
+  width:33% !important;
 }
 
 [name="address1"] {
-  width:45%;
+  width:45% !important;
 }
 
 [name="zip"] {
-  width:21%;
+  width:21% !important;
 }
 
-.overlay .gutter .modal._call_modal{
-	background:#d6d6d6;
-	margin-top:10%;
-	border-radius:15px;
+.modal._petition_modal {
+	background:#d6d6d6 !important;
+	border-radius:20px !important;
+}
+
+.overlay .gutter .modal p {
+	font-size:40px;
+	line-height: 52px !important;
+	font-weight:bold;
 }
