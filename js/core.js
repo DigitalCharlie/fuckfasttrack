@@ -52,8 +52,8 @@
         onSend: function () {
           that.hide();
           new ShareModalController({
-            headline: this.share_headline,
-            text: this.share_text
+            headline: that.share_headline,
+            text: that.share_text
           });
         }
       });
