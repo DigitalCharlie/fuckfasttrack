@@ -136,12 +136,22 @@ a.clickhere:hover {
 	padding-right:5%;
 }
 
+div.petition button {
+	font-size: 16px;
+	width:78%;
+}
+
 @media screen and (max-width:395px) {
 
-.clickherediv {
-	margin-bottom:25px;
-	display:block;
-}
+	.clickherediv {
+		margin-bottom:25px;
+		display:block;
+	}
+
+	div.petition button {
+		font-size: 13px;
+		width:83%;
+	}
 
 }
 
@@ -203,6 +213,11 @@ a.clickhere:hover {
 		margin: 0px 25px 15px 25px;
 		height:35px;
 		line-height:38px;
+	}
+
+	div.petition button {
+	font-size: 1.75rem;
+	width:74%;
 	}
 
 }
@@ -268,6 +283,12 @@ a.clickhere:hover {
 		margin: 0px 25px 10px 25px;
 	}
 
+	div.petition button {
+		font-size: 2rem;
+		width:74%;
+
+	}
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -324,7 +345,6 @@ div.petition button {
 	border: 0 none transparent;
 	background: #e23c2b;
 	color: white;
-	font-size: 2rem;
 	height: 50px;
 	line-height: 48px;
 	letter-spacing: 1px;
@@ -335,7 +355,6 @@ div.petition button {
 	text-transform: uppercase;
 	vertical-align: top;
 	cursor: pointer;
-	width:74%;
 }
 
 div.petition button:hover {
