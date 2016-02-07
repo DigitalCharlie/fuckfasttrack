@@ -96,7 +96,7 @@ a.clickhere:hover {
 	}
 
 .statement {
-	font-weight:bold;
+	font-weight:500;
 	font-size:35px;
 	margin-bottom:20px;
 	color:#ffffff;
@@ -104,7 +104,7 @@ a.clickhere:hover {
 }
 
 .rejection {
-	font-weight:bold;
+	font-weight:500;
 	font-size:35px;
 	margin-bottom:20px;
 	cursor:pointer;
