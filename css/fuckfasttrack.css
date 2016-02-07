@@ -97,19 +97,16 @@ a.clickhere:hover {
 
 .statement {
 	font-weight:bold;
-	font-size:40px;
+	font-size:35px;
 	margin-bottom:20px;
 	color:#ffffff;
-	font-family:impact;	
-	text-transform: uppercase;
+	font-family:futura;	
 }
 
 .rejection {
 	font-weight:bold;
-	font-size:40px;
+	font-size:35px;
 	margin-bottom:20px;
-	font-family:impact;	
-	text-transform: uppercase;
 	cursor:pointer;
 	text-decoration: none;
 	color:#000000;
@@ -123,7 +120,7 @@ a.clickhere:hover {
 	padding-top:20px;
 	padding-left:5%;
 	padding-right:5%;
-	padding-bottom:20px;
+	padding-bottom:10px;
 	background-image: url("../images/Redglobebackground.png");
 	background-size:100%;
 	background-repeat:no-repeat;
@@ -374,7 +371,7 @@ div.petition .thanks {
 		padding-top:35px;
 		padding-left:5%;
 		padding-right:5%;
-		padding-bottom:35px;
+		padding-bottom:15px;
 	}
 
 	.bottom {
@@ -406,13 +403,13 @@ div.petition .thanks {
 	}
 
 	.rejection {
-		font-size:60px;
-		line-height:65px;
+		font-size:50px;
+		line-height:60px;
 	}
 
 	.statement {
-		font-size:60px;
-		line-height:65px;
+		font-size:50px;
+		line-height:60px;
 		margin-bottom:25px;
 	}
 
@@ -451,7 +448,7 @@ div.petition .thanks {
 		padding-top:35px;
 		padding-left:7%;
 		padding-right:7%;
-		padding-bottom:35px;
+		padding-bottom:15px;
 	}
 
 	.bottom {
@@ -484,13 +481,13 @@ div.petition .thanks {
 	}
 
 	.rejection {
-		font-size:70px;
-		line-height:75px;
+		font-size:50px;
+		line-height:60px;
 	}
 
 	.statement {
-		font-size:70px;
-		line-height:75px;
+		font-size:50px;
+		line-height:60px;
 		margin-bottom:25px;
 	}
 
