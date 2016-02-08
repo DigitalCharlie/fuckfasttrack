@@ -438,13 +438,11 @@ div.petition .thanks {
 
 }
 
-
-
 @media screen and (min-width: 845px) {
 
 	body {
 		text-align:left;
-		font-size:17px;
+		font-size:14.5px;
 	}
 
 	.top {
@@ -504,6 +502,14 @@ div.petition .thanks {
 		width:89%;
 	}
 
+}
+
+@media screen and (min-width: 1000px) {
+
+	body {
+		text-align:left;
+		font-size:17px;
+	}
 }
 
 @media screen and (min-width: 1200px) {
