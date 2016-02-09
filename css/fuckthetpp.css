@@ -101,14 +101,14 @@ a.clickhere:hover {
 
 .statement {
 	font-weight:500;
-	font-size:35px;
+	font-size:28px;
 	margin-bottom:20px;
 	color:#ffffff;
 }
 
 .rejection {
 	font-weight:500;
-	font-size:35px;
+	font-size:28px;
 	margin-bottom:20px;
 	cursor:pointer;
 	text-decoration: none;
