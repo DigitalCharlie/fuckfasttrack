@@ -30,6 +30,10 @@
 
         <div class="rejection" id="rejection">
         </div>
+
+        <div class="another1" id="another1">
+            <p>Click here for another fucking reason to say fuck the fucking TPP.</p>
+        </div>
     </div>
 
     <br>
@@ -44,7 +48,7 @@
                 </div>
 
                 <div class="clickherediv">
-                        <a href="#" id="another" class="clickhere">CLICK HERE</a>
+                        <a href="#" id="another2" class="clickhere">CLICK HERE</a>
                 </div>
             </div>
 
@@ -169,14 +173,20 @@
             rejections[25] = "Fuuuuuuuuuuuuuuuck that.";
             rejections[26] = "Well ain't that some shit."
 
-        document.getElementById("another").addEventListener("click", showfact);
+        document.getElementById("another1").addEventListener("click", showfact);
+        document.getElementById("another2").addEventListener("click", showfact);
+
 
         function showfact(){
             var f = facts.length;
             var whichfact=Math.round(Math.random()*(f-1));
             var whichreference=whichfact;
             if (whichfact===20) {
-                var whichrejection=26;
+                var whichrejection=12;
+            }
+
+            else if (whichfact===5) {
+                var whichrejection=9;
             }
 
             else {

@@ -118,6 +118,17 @@ a.clickhere:hover {
 	text-decoration:underline;
 }
 
+.another1 {
+	font-size:17px;
+	cursor:pointer;
+	text-decoration:underline;
+	margin-top:25px;
+}
+
+.another1:hover {
+	opacity:.5;
+}
+
 .top {
 	background-color:#e23c2b;
 	padding-top:20px;
@@ -140,7 +151,7 @@ a.clickhere:hover {
 	border: none;
 	color: white;
 	display: block;
-	font-size: 23px;
+	font-size: 21px;
 	font-variant: small-caps;
 	opacity: 0.9;
 	padding: 6px 0 15px;
@@ -313,7 +324,7 @@ div.petition .thanks {
 
 .overlay .gutter .modal._call_modal h2 {
 	font-size:30px !important;
-	font-weight:500 !important;
+	font-weight:700 !important;
 	line-height:37px !important;
 	color:#000000 !important;
 	margin-bottom:0px;
@@ -327,8 +338,8 @@ div.petition .thanks {
 }
 
 .overlay .gutter .modal._petition_modal p {
-	font-size:38px;
-	line-height: 48px !important;
+	font-size:36px;
+	line-height: 46px !important;
 	font-weight: 500;
 	max-width:94%;
 	margin: 15px auto;
@@ -533,7 +544,7 @@ div.petition .thanks {
 
 	.top {
 		padding-top:5%;
-		padding-bottom:3%;
+		padding-bottom:2%;
 	}
 }
 
